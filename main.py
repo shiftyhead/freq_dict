@@ -2,7 +2,6 @@ import nltk
 from collections import Counter
 import csv
 
-
 # nltk.download('punkt')
 from nltk.collocations import *
 from nltk.tokenize import word_tokenize
