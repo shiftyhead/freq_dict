@@ -1,5 +1,6 @@
 import os
 
+
 def srt2str(source_name, target_name):
     print('open_source')
     file = open(source_name)
