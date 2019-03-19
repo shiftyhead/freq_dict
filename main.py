@@ -4,6 +4,8 @@ import csv
 
 
 nltk.download('stopwords')
+nltk.download('wordnet')
+
 from nltk.collocations import *
 from nltk.tokenize import word_tokenize
 from nltk.metrics.association import QuadgramAssocMeasures
@@ -50,11 +52,12 @@ def main():
         l = cntr.most_common(len(cntr))[i]
         write_csv(l)
         # print(l)
+
+
 def write_csv(data):
     with open('friends_counter.csv', 'a') as f:
         writer = csv.writer(f)
         writer.writerow(data)
-
 
 
 if __name__ == '__main__':
