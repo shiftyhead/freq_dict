@@ -3,7 +3,7 @@ from collections import Counter
 import csv
 
 
-# nltk.download('punkt')
+nltk.download('stopwords')
 from nltk.collocations import *
 from nltk.tokenize import word_tokenize
 from nltk.metrics.association import QuadgramAssocMeasures
@@ -13,6 +13,7 @@ quadgram_measures = QuadgramAssocMeasures()
 w_tokenizer = nltk.tokenize.WhitespaceTokenizer()
 lemmatizer = nltk.stem.WordNetLemmatizer()
 stopwords = nltk.corpus.stopwords.words('english')
+
 
 def main():
     # print(stopwords)
